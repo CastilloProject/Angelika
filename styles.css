@@ -37,16 +37,28 @@ button {
 
 .hero {
   padding: 4rem 0 3rem;
-  background: linear-gradient(180deg, #ffffff 0%, #eef2f7 100%);
+  background: linear-gradient(180deg, #f4faf6 0%, #e5f2ea 100%);
 }
 
 .hero-content {
   max-width: 720px;
 }
 
+.logo-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.site-logo {
+  display: block;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1.5rem;
+}
+
 .eyebrow {
   margin: 0 0 1rem;
-  color: #7c88a0;
+  color: #617d62;
   font-size: 0.95rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -67,7 +79,7 @@ h1 {
 .hero-copy {
   margin: 1.5rem 0 2rem;
   max-width: 56rem;
-  color: #39404d;
+  color: #344741;
 }
 
 .hero-actions {
@@ -97,7 +109,7 @@ h1 {
   display: inline-block;
   font-size: 0.95rem;
   letter-spacing: 0.12em;
-  color: #7c88a0;
+  color: #4f7a59;
   text-transform: uppercase;
 }
 
@@ -110,8 +122,8 @@ h1 {
 .service-card,
 .policy-card,
 .booking-card {
-  background: #fbfcff;
-  border: 1px solid #e5e9f0;
+  background: #f7fbf7;
+  border: 1px solid #d7e7dd;
   border-radius: 22px;
   padding: 1.75rem;
 }
@@ -154,15 +166,15 @@ h1 {
 }
 
 .button-primary {
-  background: #3345ff;
+  background: #17845f;
   color: #ffffff;
   border: 1px solid transparent;
 }
 
 .button-secondary {
   background: transparent;
-  color: #3345ff;
-  border: 1px solid rgba(51, 69, 255, 0.16);
+  color: #2c6d49;
+  border: 1px solid rgba(39, 113, 74, 0.2);
 }
 
 .button:hover {
@@ -253,8 +265,8 @@ h1 {
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 16px;
-  background: #eef1ff;
-  color: #2d3a8c;
+  background: #e8f5ec;
+  color: #26593f;
 }
 
 .policy-list {
@@ -321,7 +333,7 @@ h1 {
 }
 
 .footer-content a {
-  color: #3345ff;
+  color: #17845f;
 }
 
 @media (min-width: 720px) {
