@@ -16,7 +16,7 @@
         Sesiones individuales diseñadas para acompañarte con apoyo emocional, herramientas prácticas y una agenda online que evita mensajes innecesarios.
       </p>
       <div class="hero-actions">
-        <a class="button button-primary" href="#agendaLocal">Reservar ahora</a>
+        <a class="button button-primary" href="reserva.html">Reservar ahora</a>
         <a class="button button-secondary" href="#servicios">Ver servicios</a>
       </div>
     </div>
@@ -63,60 +63,16 @@
         <div>
           <div class="section-header">
             <p class="section-label">Reserva</p>
-            <h2>Agenda local breve y funcional</h2>
-          </div>
-          <p>Llena los datos de tu sesión y guarda la reserva directamente en tu navegador. Funciona como una agenda simple sin dependencias externas.</p>
-          <ul class="policy-list">
-            <li>La reserva se guarda en el localStorage de este navegador.</li>
-            <li>Puedes ver cambios y datos inmediatamente.</li>
-            <li>Es ideal para probar la agenda localmente.</li>
-          </ul>
-          <a class="button button-primary" href="#agendaLocal">Abrir agenda local</a>
-          <a class="button button-secondary" href="https://agenda.example.com" target="_blank" rel="noopener noreferrer">Agenda externa</a>
+          <h2>Agenda dedicada para tus citas</h2>
         </div>
-        <div class="booking-card" id="agendaLocal">
-          <h3>Agenda online local</h3>
-          <form id="bookingForm" class="booking-form">
-            <div class="input-group">
-              <label class="input-label" for="service">Servicio</label>
-              <select id="service" name="service" class="input-field" required>
-                <option value="">Selecciona un servicio</option>
-                <option value="Consulta inicial">Consulta inicial - 60 min</option>
-                <option value="Psicoterapia individual">Psicoterapia individual - 50 min</option>
-                <option value="Sesión puntual de apoyo">Sesión puntual de apoyo - 40 min</option>
-              </select>
-            </div>
-            <div class="input-row">
-              <div class="input-group">
-                <label class="input-label" for="date">Fecha</label>
-                <input id="date" name="date" type="date" class="input-field" required />
-              </div>
-              <div class="input-group">
-                <label class="input-label" for="time">Hora</label>
-                <input id="time" name="time" type="time" class="input-field" required />
-              </div>
-            </div>
-            <div class="input-group">
-              <label class="input-label" for="name">Nombre</label>
-              <input id="name" name="name" type="text" class="input-field" placeholder="Tu nombre" required />
-            </div>
-            <div class="input-group">
-              <label class="input-label" for="email">Email</label>
-              <input id="email" name="email" type="email" class="input-field" placeholder="Tu correo electrónico" required />
-            </div>
-            <div class="input-group">
-              <label class="input-label" for="notes">Notas</label>
-              <textarea id="notes" name="notes" class="input-field" rows="3" placeholder="Motivo de la sesión (opcional)"></textarea>
-            </div>
-            <button class="button button-primary" type="submit">Guardar reserva</button>
-          </form>
-          <div class="booking-summary">
-            <p class="booking-summary-title">Reservas guardadas</p>
-            <p id="bookingCount">Cargando...</p>
-            <div id="bookingsList" class="bookings-list"></div>
-          </div>
-        </div>
-      </div>
+        <p>Desde la vista de reservas dedicada podrás gestionar tus citas de forma más ordenada y sin mezclar la agenda con la página principal.</p>
+        <ul class="policy-list">
+          <li>La reserva se guarda en el localStorage de este navegador.</li>
+          <li>Puedes ver cambios y datos inmediatamente.</li>
+          <li>Es ideal para una experiencia más clara y enfocada.</li>
+        </ul>
+        <a class="button button-primary" href="reserva.html">Ir a la agenda de reservas</a>
+        <a class="button button-secondary" href="https://agenda.example.com" target="_blank" rel="noopener noreferrer">Agenda externa</a>
     </section>
 
     <section class="section section-light">

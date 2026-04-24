@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva | Angel Shape</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="logo-wrap">
+        <img src="logo.jpeg" alt="Logo Angel Shape" class="site-logo" />
+      </div>
+      <p class="eyebrow">Reserva tu sesión</p>
+      <h1>Agenda dedicada para gestionar tus citas</h1>
+      <p class="hero-copy">
+        Completa tus datos, guarda tu reserva y revisa tus citas desde una página exclusiva para la agenda.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-secondary" href="index.html">Volver al inicio</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-white">
+      <div class="container split-content">
+        <div>
+          <div class="section-header">
+            <p class="section-label">Reserva</p>
+            <h2>Formulario de reserva</h2>
+          </div>
+          <p>Registra tu sesión con fecha, hora y servicio. La información se guarda en tu navegador para que la consultes rápido.</p>
+          <ul class="policy-list">
+            <li>La reserva se guarda en el localStorage de este navegador.</li>
+            <li>Puedes volver a esta página para ver tus citas guardadas.</li>
+            <li>Funciona sin necesidad de cargar la vista principal.</li>
+          </ul>
+        </div>
+        <div class="booking-card">
+          <h3>Agenda online local</h3>
+          <form id="bookingForm" class="booking-form">
+            <div class="input-group">
+              <label class="input-label" for="service">Servicio</label>
+              <select id="service" name="service" class="input-field" required>
+                <option value="">Selecciona un servicio</option>
+                <option value="Consulta inicial">Consulta inicial - 60 min</option>
+                <option value="Psicoterapia individual">Psicoterapia individual - 50 min</option>
+                <option value="Sesión puntual de apoyo">Sesión puntual de apoyo - 40 min</option>
+              </select>
+            </div>
+            <div class="input-row">
+              <div class="input-group">
+                <label class="input-label" for="date">Fecha</label>
+                <input id="date" name="date" type="date" class="input-field" required />
+              </div>
+              <div class="input-group">
+                <label class="input-label" for="time">Hora</label>
+                <input id="time" name="time" type="time" class="input-field" required />
+              </div>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="name">Nombre</label>
+              <input id="name" name="name" type="text" class="input-field" placeholder="Tu nombre" required />
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="email">Email</label>
+              <input id="email" name="email" type="email" class="input-field" placeholder="Tu correo electrónico" required />
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="notes">Notas</label>
+              <textarea id="notes" name="notes" class="input-field" rows="3" placeholder="Motivo de la sesión (opcional)"></textarea>
+            </div>
+            <button class="button button-primary" type="submit">Guardar reserva</button>
+          </form>
+          <div class="booking-summary">
+            <p class="booking-summary-title">Reservas guardadas</p>
+            <p id="bookingCount">Cargando...</p>
+            <div id="bookingsList" class="bookings-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Angel Shape | Atención profesional, clara y accesible.</p>
+      <a href="index.html">Volver al inicio</a>
+    </div>
+  </footer>
+
+  <script src="reserva.js"></script>
+</body>
+</html>
